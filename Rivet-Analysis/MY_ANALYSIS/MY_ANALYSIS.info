@@ -1,0 +1,23 @@
+Name: MY_ANALYSIS
+Year: 2023
+Summary: This analysis compute the following observables out of the events file
+you give it: pT_ll, M_T, m_WW, m_ll, V_x, DEta_ll, DPhi_ll, DR_ll
+Experiment: ATLAS
+Collider: LHC
+Authors:
+ - Sacha Mugnier <smugnier@nikhef.nl>
+References:
+ - 'Example: Eur.Phys.J. C76 (2016) no.7, 392'
+ - 'Example: DOI:10.1140/epjc/s10052-016-4184-8'
+ - 'Example: arXiv:1605.03814'
+#Beams: sqrt(s)=13 TeV
+#Energies: [0,1000 GeV]
+#Luminosity_fb: 139.0 fb
+Description:
+In this analysis, the different observables computed are pT_ll, M_T, m_WW, m_ll, V_x, DEta_ll, DPhi_ll, DR_ll.
+It was made with a C++ code which is in the same folder.
+For the observables pT_ll, M_T, m_WW, m_ll, V_x I have used 40 bins,
+for the others (DEta_ll, DPhi_ll, DR_ll), 20 bins have been used.
+It is possible to build your own Rivet analysis by following this tutorial:
+https://gitlab.com/hepcedar/rivet/-/tree/master/doc/tutorials 
+
