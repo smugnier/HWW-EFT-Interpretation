@@ -14,8 +14,10 @@ References:
 #Energies: [0,1000 GeV]
 #Luminosity_fb: 139.0 fb
 Description:
+
 In this analysis, the different observables computed are pT_ll, M_T, m_WW, m_ll, V_x, DEta_ll, DPhi_ll, DR_ll.
-It was made with a C++ code which is in the same folder.
+It was made with a C++ code which is in the same folder. I you create your own analysis, you must put everything in the same file
+and be consistent with the name you choose. I've kept the name MY_ANALYSIS in all of the file to avoid any troubles with the Rivet code.
 For the observables pT_ll, M_T, m_WW, m_ll, V_x I have used 40 bins,
 for the others (DEta_ll, DPhi_ll, DR_ll), 20 bins have been used.
 It is possible to build your own Rivet analysis by following this tutorial:
