@@ -1,0 +1,13 @@
+This file will explain how to run a sample generation, using a MadGraph job option in the Athena framework
+
+First of all, you need to create a folder where you are going to run your generation.
+In this folder, you need to create another folder that HAS to be named with the DSID of the process you want to generate
+In this DSID-named folder, you are going to put the MadGraph job option. And then you can run your bash scripts containing the
+running parameters (cf. submission-scripts folder in the repo)
+e.g.
+
+I want to generate the process with a DSID=10000X, then the folder will look like this:
+run-10000X
+    10000X
+        MadGraph-JO
+        run.sh
