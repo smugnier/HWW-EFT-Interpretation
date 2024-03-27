@@ -6,7 +6,7 @@ In this DSID-named folder, you are going to put the MadGraph job option. And the
 running parameters (cf. submission-scripts folder in the repo)
 e.g.
 
-I want to generate the process with a DSID=10000X, then the folder will look like this:
+I want to generate the process with a DSID=10000X, then the folder will look like that:
 run-10000X
     10000X
         MadGraph-JO
