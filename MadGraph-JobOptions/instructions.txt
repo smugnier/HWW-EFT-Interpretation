@@ -9,5 +9,5 @@ e.g.
 I want to generate the process with a DSID=10000X, then the folder will look like that:
 run-10000X
     10000X
-        MadGraph-JO
+        MadGraph-JO.py
         run.sh
