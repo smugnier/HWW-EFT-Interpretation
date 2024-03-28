@@ -1,5 +1,7 @@
 # This run file is used to run the Rivet analysis on your computer. You can also submit this code to the cluster by
-# typing bsub -J [name of your submission] running-analyis.sh
+# typing bsub -J [name of your submission] running-analyis.sh. To run this, you need to be in the repository where you
+# want to create your histogram file, with extension .yoda.gz. The best is to name it run-dsid
+
 
 setupATLAS
 asetup 21.6.77,AthGeneration # or later (please avoid 21.6.19-21.6.32)
