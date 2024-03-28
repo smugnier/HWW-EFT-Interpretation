@@ -19,6 +19,5 @@ I have tested the impact of the EFT operators included in the SMEFTatNLO model o
 
 - Rivet Job Options: this folder contains one generic Rivet Job option and explain how to use it
    - A generic Rivet job option commented
-   - A instructions.txt file explaining what to do and how to plot with Rivet, using a Rivet Analysis
   
 - Rivet analysis codes: this folder contains the Rivet analysis I have used to perform the plotting 
