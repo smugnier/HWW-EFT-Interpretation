@@ -12,7 +12,7 @@ I have tested the impact of the EFT operators included in the SMEFTatNLO model o
   - There is a descriptive file, DSID.txt, that explains all the labelling of the processes.
   - For each process (S, B and SBI), there is a folder containing all the job options I have used.
   
-- Submission scripts: this folder contains all the different bash script, so all the commands I've type to generate processes, makes plots or submit jobs to the cluster.
+- Bash-scripts: this folder contains all the different bash script, so all the commands I've type to generate processes, , run Rivet analysis, make plots or submit jobs to the cluster.
   - Generation submission to the cluster: there are the scripts I have used to submit the calculations to the cluster. There is also be a file called instructions.txt that explains how to run a generation.
   - Rivet running scripts for Rivet routines and the plotting
   - Rivet analysis compiling script
