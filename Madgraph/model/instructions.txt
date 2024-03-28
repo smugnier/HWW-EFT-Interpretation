@@ -1,4 +1,4 @@
-The model I've used for my entire thesis is the SMEFTatNLO model that includes
+The model I've used for my entire thesis is the SMEFTatNLO model that includes more than the 59 EFT operators of the general symmetry assumptions.
 It contains one custom parameter card called restrict_cpG.dat, which is caled in the JO 100014-i/q
 for the generation of the cpG operator. It is needed to perform the reweighting.
 This restrict_cpG.dat set all the EFT operators to 0 except cpG that is set to 1.
