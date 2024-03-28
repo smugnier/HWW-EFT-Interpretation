@@ -1,7 +1,7 @@
 import yoda
 import argparse
 
-## The syntax to use this is python add.py file1 file2 -o output_file
+## The syntax to use this is: python add.py file1 file2 -o output_file
 ## This code is used to add two yoda files (two histograms). The output file is the file where the result will be stored.
 
 
