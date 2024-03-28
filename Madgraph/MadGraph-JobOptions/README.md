@@ -1,5 +1,14 @@
 This file gives a description of all the DSIDs (number that is a reference to a particular process) of the processes I've generated.
 
+Syntax precision in the job option:
+NP=2: generateSM and both linear and quadratic EFT
+NP=1: generate SM with linear EFT terms
+NP^2==2: generation of only linear EFT terms
+NP^2==4: generation of only quadratic EFT terms
+[QCD]: loop diagrams generation (needed for ggF)
+
+
+
 ## SIGNAL processes (ggF: gg -> h -> lvlv)
 
 The DSIDs starts at 100004, I used 100000 to 100003 to make some tests in the beginning and I haven't reinitialise the numbers.
