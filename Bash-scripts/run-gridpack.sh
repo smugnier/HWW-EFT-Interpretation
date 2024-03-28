@@ -14,7 +14,7 @@ Gen_tf.py --ecmEnergy=13000.0 \
     --randomSeed=$RANDOM \
     --jobConfig=${DATADIR}/${dsid} \
     --runNumber=${dsid} \
-    --outputEVNTFile=${dsid}.EVNT.${jobid}.ROOT \
+    --outputEVNTFile=${dsid}.EVNT.ROOT \
     --maxEvents=10000 ## This is the number of events you want to generate but has no impact in the gridpack generation as it is only the matrix elements calculation.
 
 EOF
