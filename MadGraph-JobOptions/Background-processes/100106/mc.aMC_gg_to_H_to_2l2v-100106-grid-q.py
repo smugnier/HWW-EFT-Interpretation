@@ -1,6 +1,5 @@
 ##This job option is the background only generation with EFTs=0
-##dsid = 100100
-
+##dsid = 100106
 from MadGraphControl.MadGraphUtils import *
 from MadGraphControl.MadGraph_NNPDF30NLO_Base_Fragment import *
 
@@ -16,6 +15,11 @@ if is_gen_from_gridpack():
     print("Generating from Gridpack, doing so serially")
 else: 
     os.environ["ATHENA_PROC_NUMBER"] = "16"
+
+
+if gridpack_mode:
+    from MadGraphControl import MadGraphUtils
+    MadGraphUtils.MADGRAPH_CATCH_ERRORS=False
 
 #----------------------------------------------------------------------------
 # Random Seed
@@ -44,7 +48,7 @@ set max_npoint_for_channel 4
 define p = g u c d s b u~ c~ d~ s~ b~
 define j = g u c d s b u~ c~ d~ s~ b~
 import model /project/atlas/users/smugnier/MG5_aMC_v3_5_1/models/SMEFTatNLO-NLO_no_b_mass
-generate g g >  e+ mu- ve vm~ / h QED=4 [noborn=QCD]
+generate g g >  e+ mu- ve vm~ / h NP^2==4 QED=4 [noborn=QCD]
 output -f"""
 
 decays={'25': 'DECAY  25 4.07e-03'}  ## Higgs width
@@ -92,7 +96,7 @@ c_dim6={'2': '0', '3' : '0', '4' : '0', '5' : '0', '6' : '0','9' : '0', '10' : '
 # 1 # cpl1 = 0
 # 2 # cpl2 = 0
 # 3 # cpl3 = 0
-# 4 # c3pl1 = 0
+# 4 # c3pl1 = 1
 # 5 # c3pl2 = 0
 # 6 # c3pl3 = 0
 # 7 # cpe = 0
@@ -109,7 +113,7 @@ c_dim6={'2': '0', '3' : '0', '4' : '0', '5' : '0', '6' : '0','9' : '0', '10' : '
 # 22 # ctZ = 0
 # 23 # ctW = 0
 # 24 # ctG = 0
-c_dim62f={'1' : '0', '2' : '0', '3' : '0', '4' : '0', '5' : '0', '6' : '0', '7' : '0', '8' : '0', '9' : '0', '10' : '0', '11' : '0', '12' : '0', '13' : '0', '14' : '0', '15' : '0', '16' : '0', '19' : '0', '22' : '0', '23' : '0', '24' : '0'} 
+c_dim62f={'1' : '0', '2' : '0', '3' : '0', '4' : '1', '5' : '0', '6' : '0', '7' : '0', '8' : '0', '9' : '0', '10' : '0', '11' : '0', '12' : '0', '13' : '0', '14' : '0', '15' : '0', '16' : '0', '19' : '0', '22' : '0', '23' : '0', '24' : '0'} 
 
 ## Block dim64f
 # 1 # cQq83 = 0

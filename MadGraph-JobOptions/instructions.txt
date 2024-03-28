@@ -16,5 +16,8 @@ run-10000X
 ### For the background process and the SBI process, the job option will be slightly different as they will include a so-called gridpack calculation
 
 For the B and the SBI, the gridpack is necessary as the processes are way more complicated (way more diagrams to generate as one have to account for every different quark).
-The gridpack mode of the job option allows the calculation of the matrix element to be done in parallel, splittd in different GPUs.
+The gridpack mode of the job option allows the calculation of the matrix element to be done in parallel, splitted in different GPUs. The running file for the gridpack is in Bash-scripts/run-gridpack
 This will create a file with extension .GRID.tar.gz that you will have to put in the folder where you want to run the events generation.
+
+Once the gridpack generation is done. Create another running folder, with again a folder that has the same name as the DSID
+and put in this folder the MadGraph job option (python file) as well as the .GRID.tar.gz file. Then submit the calculation to the cluster (Bash-scripts/run-submission.sh).
