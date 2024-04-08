@@ -7,6 +7,9 @@ Syntax precision in the job option:
 - NP^2==4: generation of only quadratic EFT terms
 - [QCD]: loop diagrams generation (needed for ggF)
 
+NB: in every job option, the model loaded is pointing toward my Nikhef repository, however all the necessary model files are in this repository Madgraph/models.
+When you import a model you can import a modified model by creating a copy of the parameter card of your choice (restrict_NLO.dat or restrict_LO.dat) and rename it restrict_arg.dat. 
+Then you can call it by typing `import model Madgraph/models/SMEFTatNLO-arg`.
 
 
 ## SIGNAL processes (ggF: gg -> h -> lvlv)
